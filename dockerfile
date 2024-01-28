@@ -10,7 +10,5 @@ RUN wget https://packages.microsoft.com/config/ubuntu/22.04/packages-microsoft-p
 USER $NB_UID
 RUN  dotnet new tool-manifest \
   && dotnet tool install   Microsoft.dotnet-interactive \
-  && dotnet interactive jupyter install \
-  &&  pip install jupyter_contrib_nbextensions \
-  && jupyter contrib nbextension install --user --skip-running-check
+  && dotnet interactive jupyter install 
 
