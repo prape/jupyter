@@ -11,6 +11,5 @@ USER $NB_UID
 RUN  dotnet new tool-manifest \
   && dotnet tool install   Microsoft.dotnet-interactive \
   && pip install bash-language-server dockerfile-language-server-nodejs javascript-typescript-langserver jedi-language-server  pyright  python-lsp-server   sql-language-server texlab typescript-language-server unified-language-server vscode-css-languageserver-bin vscode-html-languageserver-bin vscode-json-languageserver-bin yaml-language-server jupyterlab-language-pack-zh-CN \
-  && dotnet interactive jupyter install \
-  && jupyter lab build
+  && dotnet interactive jupyter install 
 
